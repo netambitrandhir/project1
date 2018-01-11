@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">mynukad</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">1489812601045717</string>
+    <string name="toast_cam_gallery_crop">Error while either take photo or browse image or crop image.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="nav_drawer_items">
+
+        <item>Home</item>
+        <item>Favourites</item>
+        <item>Admin</item>
+        <item>My Profile</item>
+        <item>App Feeds</item>
+        <item>Login/Signup</item>
+        <item>About App</item>
+        <item>Terms &amp; Conditions</item>
+        <item>Contact Us</item>
+        <item>Share App</item>
+        <item>Logout</item>
+
+
+    </string-array>
+</resources>

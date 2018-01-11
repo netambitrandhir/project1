@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/headerTitleAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_yesboss">
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/callmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/callmailbtn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/call_btn" />
+
+        <ImageView
+            android:id="@+id/emailbtn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/email_btn" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/reportthisuser"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/headerTitleAdd"
+        android:src="@drawable/reportthisuser"/>
+
+    <RelativeLayout
+        android:id="@+id/picLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reportthisuser">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/galleryplacholder" />
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_boundry"
+            android:elevation="3dp" />
+
+        <LinearLayout
+            android:id="@+id/memberDetailLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adminMemberName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/text_hard_gray"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/adminMemberAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/text_light_gray"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:id="@+id/adminMemberProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text=""
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/color_yesboss"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/abt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picLayout"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/aboutme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="About Me"
+            android:textAlignment="gravity"
+            android:textColor="@color/text_hard_gray"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="wrap_content"
+            android:layout_height="3px"
+            android:layout_below="@+id/picLayout"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/admin_line" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/tvDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/approveLayout"
+        android:textAlignment="center"
+        android:layout_below="@+id/abt"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_light_gray"
+        android:textSize="15sp"></WebView>
+
+   <!-- <ImageView
+        android:id="@+id/approveLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@id/callmail"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/approve"
+        android:visibility="invisible"
+        />-->
+    <LinearLayout
+        android:id="@+id/approveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/callmail"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/approveText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Approved"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:textColor="@color/text_red"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/approveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/accept"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rejectText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Rejected"
+                android:textAlignment="gravity"
+                android:textColor="@color/text_orange"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/rejectButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/reject"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

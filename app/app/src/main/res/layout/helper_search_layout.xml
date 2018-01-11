@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/color_yesboss"
+        >
+
+        <RelativeLayout
+            android:id="@+id/searhLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_above="@+id/iconHolder"
+            android:background="@drawable/shaperound"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:id="@+id/tvsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="Search by Name"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/ivsearchicon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tvsearch"
+                android:src="@drawable/search_icon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/searhLayoutBelow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shaperound"
+            android:visibility="gone"
+            android:layout_above="@+id/iconHolder"
+            >
+
+            <EditText
+                android:id="@+id/etsearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:layout_toRightOf="@+id/belowsearchicon"
+                android:background="@android:color/transparent"
+                android:hint="Search by Name"
+                android:padding="5dp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/belowsearchicon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/search_icon" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/iconHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:weightSum="4">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/byname"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/byname" />
+
+                <ImageView
+                    android:id="@+id/selectedicon3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/byname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/selectedicon"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bytype"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bytype" />
+
+                <ImageView
+                    android:id="@+id/selectedicon4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/bytype"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/selectedicon"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/searchedList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollbars="none">
+
+    </ListView>
+
+
+</LinearLayout>

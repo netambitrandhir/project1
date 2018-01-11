@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_yesboss"
+        android:minHeight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Add Classified"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topTitle">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+
+            <TextView
+                android:id="@+id/postingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="30dp"
+                android:text="Posting Title"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/foutyChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="32dp"
+                android:layout_toRightOf="@id/postingTitle"
+                android:text="(40 characters)"
+                android:textColor="@color/textcolor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editpostingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/foutyChar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textfield"
+                android:cursorVisible="true"
+                android:hint="Enter title..."
+                android:padding="10dp"
+                android:textColor="@color/textcolor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/postingDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editpostingTitle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Posting Details"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editpostingDetails"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/postingDetails"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/abput_txt_filed"
+                android:cursorVisible="true"
+                android:gravity="top"
+                android:hint="Enter your classified details..."
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/addpictext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editpostingDetails"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Add Pic(if any,upto 3)"
+                android:textColor="@color/textcolor"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/addpicBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/editpostingDetails"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/addpictext"
+                android:src="@drawable/addbtn" />
+
+
+            <com.sanganan.app.customview.HorizontalListView
+                android:id="@+id/listhorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/addpicBtn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center" />
+
+
+            <ImageView
+                android:id="@+id/submit"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/listhorizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/submit" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

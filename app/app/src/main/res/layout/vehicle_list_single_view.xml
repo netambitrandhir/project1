@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        >
+
+        <TextView
+            android:id="@+id/vehicleNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UP 16 BH 9450"
+            android:textSize="17sp"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/vehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/vehicleNumber"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_red"
+            android:text="(4 wheeler)"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/remove"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/remove"
+            android:layout_marginTop="2dp"
+            android:background="@color/text_light_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>

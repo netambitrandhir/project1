@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/newscreen_bg">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/shopImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopplaceholder" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_boundry" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/relativeLayout2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="BOP STORE"
+                android:textColor="@color/text_light_turquoise"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/shoptype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/shopImage"
+                android:text="General Store"
+                android:textColor="@color/textcolor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/shop_complex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/shopImage"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="2nd floor Amrapal Zodiac Complex new ashok nagar"
+                android:textColor="@color/text_hard_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/shopImage"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:text="Sector 120 "
+                android:textColor="@color/text_hard_gray"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/call_icon"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/ll"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/relativeLayout2"
+            android:background="@drawable/call_shop" />
+
+        <LinearLayout
+            android:id="@+id/navigation_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/ll"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/call_icon"
+            android:background="@drawable/bg_shop_distance">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/map_icon" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="100.21 KM"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/favoriteImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/favorite_unseletedheart"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/opendetail"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/next_nav" />
+
+    </RelativeLayout>
+</RelativeLayout>

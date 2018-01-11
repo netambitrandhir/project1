@@ -1,0 +1,315 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sanganan.app">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".common.MyApp"
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeLocation">
+
+        <activity
+            android:name=".activities.StartSearchPage"
+            android:allowEmbedded="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+  <activity
+            android:name=".activities.PostGalleryImageActivity"
+            android:allowEmbedded="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name=".activities.AnyNotificationActivity"
+            android:allowEmbedded="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+
+        <activity
+            android:name=".activities.MainHomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+           ></activity>
+
+        <activity
+            android:name=".fragments.SignupFirstPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+
+        <activity
+            android:name=".fragments.SignupSecondPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+
+        <activity
+            android:name=".fragments.SendNotificationByAdmin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+
+        <activity
+            android:name=".activities.NewsFeedNotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="adjustPan|adjustResize"></activity>
+
+        <activity
+            android:name=".activities.QRCodeReaderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="adjustPan|adjustResize"></activity>
+
+        <activity
+            android:name=".fragments.AddHelperActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".fragments.AddClassified"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".fragments.EditHelperActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".fragments.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".fragments.AddComplaintActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".fragments.ComplainSearchFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".fragments.NotificationSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".fragments.CommunitySearchFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".fragments.YourNeighbourSearchFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".fragments.SignInFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <activity
+            android:name=".activities.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLocation"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".fragments.UpdateStatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" />
+
+        <activity
+            android:name=".fragments.SocietyInfoFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" />
+
+        <activity
+            android:name=".activities.AboutApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" />
+
+        <activity
+            android:name=".activities.ContactUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" />
+
+        <activity
+            android:name=".activities.TermsANDCondition"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" />
+
+
+        <activity
+            android:name=".fragments.HelpCalloutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" />
+
+        <activity
+            android:name=".fragments.AdvertiseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" />
+
+        <activity
+            android:name=".fragments.ApprovalPendingFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" />
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.sanganan.app.sample.SendBirdOpenChatActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"
+            android:windowSoftInputMode="stateUnchanged|adjustResize"></activity>
+
+        <activity
+            android:name="com.sanganan.app.sample.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.sanganan.app.sample.SendBirdUserListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.sanganan.app.sample.SendBirdBlockedUserListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.sanganan.app.sample.SendBirdMemberListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.sanganan.app.sample.SendBirdParticipantListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.sanganan.app.sample.SendBirdOpenChannelListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.sanganan.app.sample.SendBirdGroupChatActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan"></activity>
+
+        <activity
+            android:name="com.sanganan.app.sample.SendBirdGroupChannelListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SendBird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/mynukad_icon_48" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@android:color/transparent" />
+
+        <activity
+            android:name=".activities.MemberSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain"></activity>
+
+        <activity android:name=".activities.FullViewGalleryImages" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="82fa460b5e277fe03d3e85c7aa37b0687dc27534" />
+    </application>
+
+</manifest>

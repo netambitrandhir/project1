@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+   >
+
+    <ImageView
+        android:id="@+id/complainimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/galleryplacholder"/>
+    <View
+        android:layout_width="10dp"
+        android:layout_height="100dp"
+        android:background="#fff"
+        android:layout_toRightOf="@+id/complainimage"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/crossnew"
+        android:layout_alignRight="@+id/complainimage"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="0dp"
+        />
+</RelativeLayout>

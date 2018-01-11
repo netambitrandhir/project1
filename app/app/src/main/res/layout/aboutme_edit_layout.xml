@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_yesboss"
+        android:minHeight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titletextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="About me"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/aboutmeText"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:gravity="top"
+        android:textSize="13sp"
+        android:hint="Enter about yourself ..."
+        android:background="@drawable/textview_design"/>
+
+
+    <ImageView
+        android:id="@+id/done"
+        android:src="@drawable/donenew"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+      />
+
+
+
+
+</LinearLayout>

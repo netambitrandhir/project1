@@ -1,0 +1,38 @@
+[
+  {
+    "category_id": 1,
+    "image_url": "maintance_img",
+    "category_name":"SOCIETY MAINTANCE",
+    "color":"yellow"
+  },
+  {
+    "category_id":2,
+    "image_url": "nearby",
+    "category_name":"NEARBY SHOPS",
+    "color":"red"
+  },
+  {
+    "category_id":3,
+    "image_url": "resident_directory_img",
+    "category_name":"RESIDENT DIRECTORY",
+    "color":"green"
+  },
+  {
+    "category_id":4,
+    "image_url": "complain_img",
+    "category_name":"COMPLAINS",
+    "color":"blue"
+  },
+  {
+    "category_id":5,
+    "image_url": "complain_img",
+    "category_name":"CONTACTS",
+    "color":"voilet"
+  },
+  {
+    "category_id":6,
+    "image_url": "resident_directory_img",
+    "category_name":"FORUM",
+    "color":"brown"
+  }
+]

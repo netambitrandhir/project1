@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/titletextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Notification"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/share"
+            android:src="@drawable/share_white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:id="@+id/contentHolder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/notificationimagebg"
+            android:layout_weight="0.6">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:maxLines="2"
+                android:textAlignment="center"
+               />
+            <ImageView
+                android:id="@+id/imgSeverity"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_critical_up"/>
+            <TextView
+                android:id="@+id/time_added_on"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="07 July 2016 02:00 PM"
+                android:textSize="15sp"
+                android:textColor="@color/text_hard_gray" />
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_added_on"
+                android:scrollbars="vertical"
+                android:fillViewport="true"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:padding="10dp"
+                    android:autoLink="all"
+                    android:text=""
+                    android:isScrollContainer="true"
+                    android:textColor="@color/text_hard_gray" />
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/imageHolder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/notificationimagebg"
+            android:layout_weight="0.37">
+
+            <TextView
+                android:id="@+id/imageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:text="Related images(tap to zoom)"/>
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_below="@+id/imageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="6dp"
+                android:background="#000">
+
+            </View>
+
+
+
+            <com.sanganan.app.customview.HorizontalListView
+                android:layout_below="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/listhorizontal"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.sanganan.app.adapters.YourNeighborsAdapter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/notification_background"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:layout_centerVertical="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/picture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/galleryplacholder" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBelow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="invisible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/colorback"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@color/color_yesboss" />
+
+            <TextView
+                android:id="@+id/textNameInitial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="N"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/relativeLayoutTop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/relativeLayoutTop"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="Pranav Kumar"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/id_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="0.2"
+                android:text="K-1002"
+                android:textAllCaps="true"
+                android:textColor="@color/text_hard_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/company_tag"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="Software Engineer, infosys"
+                android:textColor="@color/text_light_gray"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.40"
+                android:layout_marginBottom="10dp"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/call_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/call" />
+
+                <ImageView
+                    android:id="@+id/message_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_toRightOf="@+id/call_imageView"
+                    android:src="@drawable/email_icon" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_yesboss">
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/subjectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Subject"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/subjectField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/textfield"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:nextFocusForward="@+id/phone"
+        android:textSize="13sp"
+        android:textColor="#000"
+        android:visibility="gone"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/bodyField"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/abput_txt_filed"
+            android:gravity="top|left"
+            android:isScrollContainer="true"
+            android:padding="5dp"
+            android:textSize="13sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sendButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+       android:layout_gravity="center_horizontal"
+        android:src="@drawable/sendemail"/>
+
+
+
+
+</LinearLayout>

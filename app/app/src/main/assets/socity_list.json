@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "socity_name": "Amrapali Zodiac",
+    "address_1": "Sector 120",
+    "address_2": "",
+    "city": "Noida",
+    "isActive": 1,
+    "state": "UP",
+    "pin_code": "201301",
+    "image_url": "http://www.amrapalizodiac.in/images/amrapalizodiacnoida1.jpg"
+  },
+  {
+    "id": 2,
+    "socity_name": "Prateek Laurel",
+    "address_1": "Sector 120",
+    "address_2": "",
+    "city": "Noida",
+    "isActive": 1,
+    "state": "UP",
+    "pin_code": "201301",
+    "image_url": "http://www.amrapalizodiac.in/images/amrapalizodiacnoida1.jpg"
+  },
+  {
+    "id": 3,
+    "socity_name": "Amrapali Platinum ",
+    "address_1": "Sector 120",
+    "address_2": "",
+    "city": "Noida",
+    "isActive": 1,
+    "state": "UP",
+    "pin_code": "201301",
+    "image_url": "http://www.amrapalizodiac.in/images/amrapalizodiacnoida1.jpg"
+  },
+  {
+    "id": 4,
+    "socity_name": "Gaur Gardenia",
+    "address_1": "Sector 119",
+    "address_2": "",
+    "city": "Noida",
+    "isActive": 1,
+    "state": "UP",
+    "pin_code": "201301",
+    "image_url": "http://www.amrapalizodiac.in/images/amrapalizodiacnoida1.jpg"
+  },
+  {
+    "id": 5,
+    "socity_name": "Eldeco Aamantran",
+    "address_1": "Sector 119",
+    "address_2": "",
+    "city": "Noida",
+    "isActive": 1,
+    "state": "UP",
+    "pin_code": "201301",
+    "image_url": "http://www.amrapalizodiac.in/images/amrapalizodiacnoida1.jpg"
+  },
+  {
+    "id": 1,
+    "socity_name": "Gaur City",
+    "address_1": "Noida Extension",
+    "address_2": "",
+    "city": "Noida",
+    "isActive": 1,
+    "state": "UP",
+    "pin_code": "201301",
+    "image_url": "http://www.amrapalizodiac.in/images/amrapalizodiacnoida1.jpg"
+  }
+]

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_yesboss"
+        android:minHeight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titletextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:text="BOP STORE"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/favorite_help"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/favorite_helper" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/topTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutnear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topTitle"
+        android:orientation="vertical"
+       >
+
+        <ImageView
+            android:id="@+id/full_imagebanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shopplaceholder"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/bopstore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:text="BOP STORE"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/generalstore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bopstore"
+                android:layout_centerHorizontal="true"
+                android:text="General Store"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/textcolor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/shopno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generalstore"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_centerHorizontal="true"
+                android:text="Shop No. 2,Hello brother hello"
+                android:textAlignment="center"
+                android:textColor="@color/color_yesboss"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/getdirection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopno"
+                android:text="Get direction"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:textAlignment="center"
+                android:textColor="@color/text_red"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_below="@+id/getdirection"
+                android:id="@+id/calli"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/call_details"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                />
+
+        </RelativeLayout>
+
+
+        <WebView
+            android:id="@+id/webviewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></WebView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

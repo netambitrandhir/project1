@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/relativeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/image_container"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/image_container"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/showList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/instabug_transparent_color"
+            android:dividerHeight="1px"
+            android:scrollbars="none"></ListView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/startChat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        android:elevation="2dp"
+        android:src="@drawable/forum_chat"></ImageView>
+
+    <ImageView
+        android:id="@+id/showTop"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="-30dp"
+        android:elevation="2dp"
+        android:src="@drawable/scroll_to_top"
+        android:visibility="gone"></ImageView>
+
+    <ImageView
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/bottom_info"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

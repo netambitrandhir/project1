@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_yesboss"
+        android:minHeight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titletextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Saved Helpers"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+    <com.sanganan.app.customview.AutoGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:scrollbars="none"
+        android:numColumns="2"
+        android:layout_below="@+id/topTitle"
+        android:visibility="visible"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/blank_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:background="@drawable/favorite_seletedheart"
+            android:id="@+id/favoriteImage"
+            android:layout_centerHorizontal="true"
+            android:layout_height="60dp"
+            android:layout_width="60dp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_below="@+id/favoriteImage"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/favTextView"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="You have not added any helper as favourites"
+                android:textColor="@color/text_color"
+                android:textSize="13dp" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/favTextView1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="please navigate to Community Helper and"
+                android:textColor="@color/text_color"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:id="@+id/favTextView2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="tap on"
+                    android:textColor="@color/text_color"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:background="@drawable/favorite_unseleted"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/favTextView2"
+                    android:layout_width="25dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

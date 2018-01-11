@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/notification_background"
+        android:id="@+id/imageView2" />
+
+
+    <LinearLayout
+        android:id="@+id/water_supply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/topTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="Water supply will be closed"
+            android:textColor="@color/text_hard_gray"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/timeField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.4"
+            android:gravity="right"
+            android:lines="1"
+            android:text="01/july/2016 12:02 AM"
+            android:textColor="@color/color_yesboss"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/from_rwa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/water_supply"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:id="@+id/causeField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.88"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text="Due to some maintance work in society between 11:12 Am to 04 dfsd sdfsf sfdsfd fdhsdhhdfsdh fsdfsh dfshfdsh dfssfd dfsshfd sdfshd fdsjfdsh fdsfh fdhsf fdsfd fdsf sdffsf dfss fsdfs"
+            android:textColor="@color/text_hard_gray"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/llarro"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/arrowIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arro_skyblue" />
+
+        <ImageView
+            android:id="@+id/imgSeverity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/arrowIcon"
+
+            android:layout_marginTop="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentEnd="true" /></RelativeLayout>
+</RelativeLayout>

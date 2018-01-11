@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_yesboss"
+        android:minHeight="50dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Community Helpers"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/search_left" />
+
+        <RelativeLayout
+            android:id="@+id/searhLayoutBeforeClick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shaperound"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/searchEditTextBeforeClick"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="Search by Name"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/searchEditTextBeforeClick"
+                android:src="@drawable/search_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searhLayoutAfterClick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shaperound"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/searchEditTextAfterClick"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/search_iconAfterClick"
+                android:background="@android:color/transparent"
+                android:hint="Search by Name"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/search_iconAfterClick"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/crossButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:src="@drawable/close_icon" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.sanganan.app.customview.AutoGridView
+        android:id="@+id/gridView"
+        android:layout_below="@+id/topTitle"
+        android:layout_above="@+id/addhelper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/addhelper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/addhelpers"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+    <include
+        android:id="@+id/loadItemsLayout_listView"
+        layout="@layout/lazy_loading_footer_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

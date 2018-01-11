@@ -1,0 +1,367 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/view">
+
+
+    <RelativeLayout
+        android:id="@+id/container_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_yesboss"
+            android:elevation="12pt"
+            android:minHeight="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titletextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:text="Sign-up"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/society_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="SOCIETY SELECTED "
+            android:textColor="@color/color_yesboss"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/society_selected"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/groupspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+
+                    android:id="@+id/societyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Apra Arya"
+                    android:textColor="#4B4B4B"
+                    android:textSize="16sp"></TextView>
+
+                <ImageView
+                    android:id="@+id/arrowButton"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/societyName"
+                    android:padding="2dp"
+                    android:src="@drawable/arrow_down_sign_to_navigate" />
+            </RelativeLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/societyName"
+                android:background="@drawable/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/flatno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Flat No* :"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/blockname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/flatno"
+                    android:layout_alignBottom="@+id/flatno"
+                    android:layout_toEndOf="@+id/flatno"
+                    android:layout_toRightOf="@+id/flatno"
+                    android:text="(Write with block name if there)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/block"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/textfield"
+                android:cursorVisible="false"
+                android:hint="block A/F-20"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:nextFocusForward="@+id/emailEditText"
+                android:padding="8dp"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/checkboxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/block"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:id="@+id/checkbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true"
+                        android:focusableInTouchMode="false"
+                        android:scaleType="fitXY"
+                        android:scaleX=".4"
+                        android:scaleY=".4" />
+
+                    <TextView
+                        android:id="@+id/textCheckbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_toRightOf="@+id/checkbox1"
+                        android:text="Owner"
+                        android:textColor="#000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/yes"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:id="@+id/checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="-20dp"
+                        android:button="@drawable/checkbox_selector"
+                        android:scaleType="centerInside"
+                        android:scaleX=".4"
+                        android:scaleY=".4" />
+
+                    <TextView
+                        android:id="@+id/textCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_toRightOf="@+id/checkbox"
+                        android:text="Tenant"
+                        android:textColor="#000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Email* :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/textfield"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:nextFocusForward="@+id/phone"
+                android:padding="8dp"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Phone No*"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/phonedesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/phone_no"
+                    android:layout_toRightOf="@+id/phone_no"
+                    android:text="(can make it private from profile page)"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/textfield"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLines="1"
+                android:nextFocusForward="@+id/fullName"
+                android:padding="8dp"
+                android:maxLength="12"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Full Name* :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/textfield"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:nextFocusForward="@+id/pswdEditText"
+                android:padding="8dp"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Password* :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/pswdEditText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/textfield"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:nextFocusForward="@+id/confirmPwdEditText"
+                android:padding="8dp"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/account_yet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="By clicking sign-up, you are accepting"
+                android:textColor="@color/text_light_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/termandcondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Terms and Conditions"
+                android:textColor="#4ab2b8"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/sign_up_btn" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "280617717159",
+    "firebase_url": "https://nukkadforeverone.firebaseio.com",
+    "project_id": "nukkadforeverone",
+    "storage_bucket": "nukkadforeverone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280617717159:android:437cb149610a0e88",
+        "android_client_info": {
+          "package_name": "com.sanganan.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280617717159-djoqut0jetajjji4cnfbgldgumu3is2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanganan.app",
+            "certificate_hash": "1D132A8361197A29E032F44D9E35F1CB5CDA8584"
+          }
+        },
+        {
+          "client_id": "280617717159-kv1aotiva446aehoo3kmlvcpnlfhaset.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC28Jb1llc6SCwgJj9H97QUGg2SfUuJXNI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280617717159-kv1aotiva446aehoo3kmlvcpnlfhaset.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

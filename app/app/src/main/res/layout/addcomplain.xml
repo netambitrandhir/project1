@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_yesboss"
+        android:minHeight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titletextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Complaint"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/topTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Complaint Regarding"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_hard_gray"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text=" (like Plumber,Electrician)"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/abc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:height="30dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/textview_design"
+                        android:cursorVisible="true"
+                        android:focusable="false"
+                        android:hint=""
+                        android:inputType="none"
+                        android:isScrollContainer="true"
+                        android:lines="1"
+                        android:minHeight="35dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:textColorHint="#D7D5D6"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/abc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Complaint Details"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_hard_gray"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pswdEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/abput_txt_filed"
+                        android:gravity="top|left"
+                        android:hint=""
+                        android:scrollbars="vertical"
+                        android:padding="5dp"
+                        android:singleLine="false"
+                        android:textColor="#000"
+                        android:textColorHint="#D7D5D6"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll3"
+                    android:background="@android:color/transparent"
+                    android:isScrollContainer="false"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/checkBoxPublicComplain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="-15dp"
+                            android:button="@drawable/checkbox_selector"
+                            android:scaleType="fitXY"
+                            android:scaleX=".4"
+                            android:scaleY=".4" />
+
+                        <TextView
+                            android:id="@+id/textCheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/checkbox"
+                            android:text="Check if this complaint is for society level issue"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/text_hard_gray"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textadd_anyuptoThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="Add Pic(if any,upto 3)"
+                            android:textColor="@color/text_hard_gray"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/addButton"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/textadd_anyuptoThree"
+                            android:padding="5dp"
+                            android:src="@drawable/addbtn" />
+
+                    </RelativeLayout>
+
+                    <com.sanganan.app.customview.HorizontalListView
+                        android:id="@+id/listhorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="5dp"
+                        android:baselineAligned="false"
+                        android:gravity="center" />
+
+
+                    <ImageView
+                        android:id="@+id/submit"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="fill_vertical|center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/submit"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

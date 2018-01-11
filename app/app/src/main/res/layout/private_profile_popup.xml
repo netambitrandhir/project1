@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#fff"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Private Profile"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_below="@+id/topLayout"
+            android:id="@+id/dialogMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Seems like this user has made his/her profile private so you can not call but still can email"
+            android:textColor="#000"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@+id/dialogMsg"
+            android:layout_marginBottom="-3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/email_btn_shadow"
+                android:id="@+id/emailButton" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cancel_btn_shadow"
+                android:id="@+id/cancelButton" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

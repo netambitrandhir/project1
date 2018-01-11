@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_yesboss"
+        android:isScrollContainer="false"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/searchBoxTop"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shaperound"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/boxOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nextFocusForward="@+id/editTextsearch"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textNameInitial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="Search by Name"
+                    android:padding="5dp"
+                    android:enabled="false"
+                    android:textColor="@color/light_black"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textNameInitial"
+                    android:src="@drawable/search_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/boxTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/search_icon_n"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/search_icon" />
+
+                <EditText
+                    android:id="@+id/editTextsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/search_icon_n"
+                    android:background="@android:color/transparent"
+                    android:hint="Search by Name"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="@color/light_black"
+                    android:textSize="15dp" />
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/searchedList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4dp"
+        android:scrollbars="none">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_yesboss"
+        android:minHeight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titletextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Admin"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/textTop"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/starttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are logged in as"
+            android:textSize="15sp"
+            android:textColor="@color/color_nukad_orange"/>
+
+        <TextView
+            android:id="@+id/middletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Admin"
+            android:textSize="15sp"
+            android:textColor="@color/color_yesboss"/>
+
+        <TextView
+            android:id="@+id/endtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" for this society"
+            android:textSize="15sp"
+            android:textColor="@color/color_nukad_orange"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

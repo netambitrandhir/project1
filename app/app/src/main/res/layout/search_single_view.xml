@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Gaurav Sinha"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_hard_gray"
+        />
+    <TextView
+        android:id="@+id/fieldAny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="Abcdef"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_light_gray"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/linecolor"/>
+
+
+</LinearLayout>

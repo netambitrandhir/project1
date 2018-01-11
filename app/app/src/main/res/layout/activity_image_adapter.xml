@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_marginTop="25dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/society_placeholder" />
+
+    <TextView
+        android:id="@+id/nameTxtViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:text="AMRAPALI ZODIAC"
+        android:textStyle="bold"
+        android:textColor="@color/ColorPrimaryDark"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:id="@+id/addressTxtViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="SECTOR 120 NOIDA"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:paddingLeft="1dp"
+            android:orientation="horizontal"
+            android:id="@+id/maplayput"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+          <!--  <ImageView
+                android:id="@+id/map_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/startmapicon" />-->
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/map_icon"
+                android:text="101.3KM"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/startborder"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/maplayput"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/startborderimg"/>
+    </RelativeLayout>
+</LinearLayout>

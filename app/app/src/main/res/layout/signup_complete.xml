@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Cool!!"
+            android:textColor="#fff"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dialogMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="You are registered with Amarpali Zodiac 120. Now RWA will verify your data and on approval, you can browse other features of app"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ok_btn"
+        android:id="@+id/submit" />
+</LinearLayout>

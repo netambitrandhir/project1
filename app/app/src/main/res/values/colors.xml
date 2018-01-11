@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4ab2b8</color>
+    <color name="ColorPrimaryDark">#4ab2b8</color>
+    <color name="color_yesboss">#4ab2b8</color>
+    <color name="white">#ffffff</color>
+    <color name="textcolor">#000000</color>
+    <color name="linecolor">#808080</color>
+    <color name="color_field">#ffffff</color>
+    <color name="color_nukad_orange">#f6a70a</color>
+    <color name="text_color">#4b4b4b</color>
+    <color name="black_shade">#a8a8a8</color>
+    <color name="text_hard_gray">#4a4a4a</color>
+    <color name="text_light_gray">#b2b2b2</color>
+    <color name="text_light_turquoise">#76c3c9</color>
+    <color name="text_red">#d30011</color>
+    <color name="post_text_red">#d0001e</color>
+    <color name="text_orange">#faab3e</color>
+    <color name="light_black">#494949</color>
+    <color name="post_name_flat">#7e7e7e</color>
+    <color name="light_green">#ff99cc00</color>
+
+
+</resources>

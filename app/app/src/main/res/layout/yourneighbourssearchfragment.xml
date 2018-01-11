@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/color_yesboss">
+
+        <RelativeLayout
+            android:id="@+id/searhLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/iconHolder"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shaperound"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="Search"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/ivsearchicon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tvsearch"
+                android:src="@drawable/search_icon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/searhLayoutBelow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/iconHolder"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shaperound"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etsearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/belowsearchicon"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                android:hint="Search by Name"
+                android:padding="5dp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/belowsearchicon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/search_icon" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/iconHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/byname"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bynamen" />
+
+                <ImageView
+                    android:id="@+id/selectedicon1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/byname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/selectedicon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/byprofession"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/byprofession" />
+
+                <ImageView
+                    android:id="@+id/selectedicon2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/byprofession"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/selectedicon"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/byflatno"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/byflatno" />
+
+                <ImageView
+                    android:id="@+id/selectedicon3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/byflatno"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/selectedicon"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bytype"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bycarno" />
+
+                <ImageView
+                    android:id="@+id/selectedicon4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/bytype"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/selectedicon"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/searchedList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollbars="none">
+
+    </ListView>
+</LinearLayout>
